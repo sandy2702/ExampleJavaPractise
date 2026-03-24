@@ -1,0 +1,43 @@
+package org.example;
+
+public class StringMethods2 {
+    public  static  void main(String[] args){
+//SUBSTRING() METHOD--> to extract some parts of the string from the main string "Hello World"
+// Including counting of spaces the total characters in the String is 10. String Index starts from 0
+ //Substring with single parameter(beginindex) returns the mentioned resp character and also the remaining characters in the String.
+ //Substring with double parameter(beginindex, endindex+1) returns the mentioned resp character
+    String data = "Hello World";
+    String newdata1 = data.substring(3);
+    String newdata = data.substring(6,10);
+    System.out.println(newdata1);
+    System.out.println(newdata);
+
+ //REPLACE() METHOD--> If we need to replace certain characters from the string, we use replace() method
+     String replacedData = data.replace('l','L');
+     System.out.println(replacedData);
+
+// INDEXOF() METHOD---> It is a reverse of charAt()method. In charAt() we would be giving the index it will print the character
+ //Here if we give the character it would return the index position of the particular character.Return type is int
+    int CharcterIndex = data.indexOf('o');
+    System.out.println(CharcterIndex); //o/p: 4
+
+//        int indexofthestring = data.indexOf("World");
+//        System.out.println(indexofthestring);
+//
+//        int IndexoftheString1 = data.indexOf('r', 3);
+//        System.out.println(IndexoftheString1);
+        //LASTINDEX()----> It returns the last occurance of the repeated character. In the String o is being repeated twice
+
+        int lastindexofcharacter = data.lastIndexOf('H');
+        System.out.println(lastindexofcharacter);
+
+
+
+
+
+
+
+
+    }
+
+}
