@@ -1,0 +1,96 @@
+package org.example;
+
+//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
+// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+public class StringMethods1 {
+    public static void main(String[] args){
+
+//        int x = 10;
+//       String name = "Apple";
+////        int y = 10;
+//       String name2 = "apple";
+//        //String name2 = "Apple007";
+
+//        System.out.println(x==y); // checking the values
+//        System.out.println(name==name2); // checking the reference value hashcode
+
+//        System.out.println(name.hashCode());//printing the reference variable hashcode values
+//        System.out.println(name2.hashCode());//printing the reference variable hashcode values
+
+        //1. Equals & EqualsIgnoreCase Method
+//
+//        System.out.println(name.equals(name2)); // equals() method is case sensitive. Content should be same and also the alphabet case should be equal
+//        System.out.println(name.equalsIgnoreCase(name2));// checks only the content, ignores the cases. Non-sensitive
+
+        //2. length() Method-->To find the size of the String. Tells how many characters present in the String
+
+        String name1 = "Muruga";
+        System.out.println(name1.length()); // The o/p: will be in integer format. prints the number of characters present in the String
+
+        String data = "    Apple    ";
+        System.out.println(data.length()); // Java will count/consider the whitespaces too and then print the number of characters
+
+        //3. trim() Method--> It removes the heading/front whitespaces and tail/rear whitespaces and prints the exact String Size.
+        //removes whitespaces from the start and the end.
+
+        data = data.trim();// Prints only the String value Apple, since I need the length of the String after removing whitepsace
+        System.out.println(data.length());// The o/p: will be now is 5, after removing the front & back whitespaces
+
+        //4 & 5, tolowercase() & touppercase() We need to store the String in the variable while converting
+//
+//        String data1 = "Apple";
+//        data1 = data1.toUpperCase();
+//        System.out.println(data1.toUpperCase());
+//        data1 = data1.toLowerCase();
+//        System.out.println(data1.toLowerCase());
+
+        //6. String Concatination/concat--> Whenever we need to join two strings we call it as concatination. Joining of multiple strings
+
+        int num = 1;
+        //String data2 = " ";
+//        String datas = data1.concat("2702");
+        String newdata = 1 + " ";// To concat two strings we can use either + symbol or concat() method
+        System.out.println(newdata);
+
+        //7. charAt() Method---> It will return each and every characters. we need to mention the index of the character. Index starts from 0
+
+        String datas = "Apple2702abc";
+        System.out.println(datas.charAt(9));// o/p: Prints the integer value 7 which is present in the 6th index of the String
+
+        //8. contains() Method--> It will say/To check whether a certain character, or certain substring present in the main string or not
+        // It returns boolean value, true or false, whether the particular string or character present in the mainstring
+
+        System.out.println(datas.contains("abc")); //o/p: true since abc is present in the string datas = Apple2702abc
+
+        System.out.println(datas.contains("qwerty")); //o/p: Returns false since qwerty string is not there in the main string
+
+        //9. IsEmpty() Method--> To check/to tell  whether the string is empty or not
+
+        System.out.println(datas.isEmpty());//returns false because String datas is having String Literal Apple2702abc
+
+        String NewData = ""; // empty string
+        System.out.println(NewData.isEmpty());// returns true means NewData reference variable no String Literal is there.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+}
