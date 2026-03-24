@@ -1,0 +1,33 @@
+package org.example;
+
+import java.util.Arrays;
+
+public class StringMethodsSplit {
+
+    public static void main(String[] args)
+    {
+        String data = "Hello world Hi How Are You?";
+
+        //SPLIT METHOD
+        //AIM: Split the string into an array. In Order to perform some manipulations in the string we are splitting the strings and converting into array
+        //Split is very important method, whenever we want to convert string into an Array
+
+       String words[] = data.split(" ");
+       
+      for(String temp:words)
+      {
+          System.out.println(temp);
+//o/p: Hello
+//world
+//Hi
+//How
+//Are
+//You?
+      }
+      // TO PRINT THE STRING INSIDE SQUARE BRACKET FORMAT [] USE ARRAYS.TOSTRING[refevariable]
+
+        System.out.println(Arrays.toString(words)); //o/p: [Hello, world, Hi, How, Are, You?]
+
+    }
+
+}
